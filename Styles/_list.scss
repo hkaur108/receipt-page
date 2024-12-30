@@ -1,0 +1,14 @@
+
+ul li, ol li{   
+    margin: 0.5rem 1.20rem;
+    padding-left: 1rem;
+    color:rgb(109, 107, 107);
+    font-size: 1rem;
+    line-height: 1.50rem;
+
+    &::marker{
+        color:$headingColor;
+        font-weight: bolder;
+      
+    }
+}

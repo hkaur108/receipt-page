@@ -1,0 +1,66 @@
+@use '../Styles/commonStyle' as c;
+@import './variables';
+
+
+@media  screen and (max-width:768px) {
+    .recipe-container{
+        width:100%;
+        max-width: 350px;
+        padding:1.50rem;
+        h1{
+            line-height: 2rem;
+        }
+        .preparation>ul>li:nth-child(1){
+            line-height: 1rem;
+        }
+    }
+    
+}  
+
+@media  screen and (max-width:600px) {
+    .recipe-container{
+        width:100%;
+        max-width: 350px;
+        padding: 0 !important;
+        background-color: $containerBackground;
+        border-radius: 10px;
+        margin: 2rem 3rem;
+        box-shadow: 0x 0px 1px 10px lightgray;
+       
+        .image-container{
+            display:block;
+            width:100%;
+            img{
+                display: block;
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+        .content-container{
+            font-family: "Outfit", serif;
+            padding: 1rem 2rem;
+            .intro{
+                h1{
+                    margin:.5em 0;
+                    font-size: 2rem;
+                    font-family: "Young Serif", serif!important;
+                }
+                p{
+                    @include c.CommonStyles;
+                }
+            }
+        }
+        .ingredients, .instructions,  .nutrition{
+            padding:.5rem 2rem;
+        }
+        .preparation > p{
+            font-weight: bolder;
+            
+
+        }
+        .preparation>ul>li:nth-child(1){
+            line-height: 1rem;
+        }
+        
+    }
+}  

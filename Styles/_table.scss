@@ -1,0 +1,50 @@
+
+@use '../Styles/commonStyle' as c;
+table{
+    width:100%;
+    font-size: 0.95rem;
+    color:rgb(109, 107, 107);
+    border-collapse: collapse;
+    margin-bottom: 1.50rem;
+    th{
+        font-weight: normal;
+        padding: 0.5rem 0 0.5rem 1rem;
+        margin-bottom: 0.5rem 0;
+    }
+    th:nth-child(2){
+        font-weight: bold;
+        color:$headingColor;  
+    }
+    tr{
+      border-bottom: 1px solid rgb(198, 198, 198);
+        td{
+            text-align: center;
+            padding: 0.5rem 0; 
+        }
+        td:nth-child(2){
+            color:$headingColor;
+            font-weight: bold;
+        }
+    }
+    tr:last-child{
+        border-bottom:none;
+      }
+}
+
+
+.nutrition{
+    text-align: left;
+    p{
+        font-size: .95rem;
+        @include c.CommonStyles;
+    }
+    table{
+        tr{   
+            td{        
+                padding-left: 1rem;
+                text-align: left;
+                
+            }
+        }
+    }
+}

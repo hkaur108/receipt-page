@@ -1,0 +1,23 @@
+
+/// preparation div
+.preparation{
+    width:100%;
+    background-color: #faf2f2;
+    padding:1rem;   
+    border-radius: 10px;
+    line-height: .5em;
+    p{
+        color:$headingColor!important;
+        font-size: 1rem;
+        margin:1em 0;
+        font-weight: bolder;
+     
+    }
+    ul{
+        li{
+            strong{
+                font-weight: bolder;
+            }
+        }
+    }
+}
